@@ -1,0 +1,21 @@
+1. Jelaskan apa itu Navi Protocol dan kaitannya dengan SUI
+
+Navi Protokol adalah Protokol likuiditas pada SUI (sekaligus Protokol likuiditas perdana pada SUI). 
+Navi Protokol dibangun atas blockchain SUI.
+Navi Protokol membuat user dapat berpartisipasi menyediakan likuiditas (deposit/supply) atau peminjam likuiditas (borrow) dalam ekosistem Sui.
+Navi menyediakan ekosistem aplikasi Defi (jaringan layanan keuangan berbasis blockchain) termasuk LENDING/BORROWING dengan Protokol Navi.
+Navi Protokol memiliki beberapa fitur innovatif seperti : Flash Loans, Automatic Leverage Vaults, LST Strategies and Isolation Mode
+
+Alur kerja pengguna pada Navi di jaringan Sui:
+1. Pengguna memiliki aset di Sui dan menyetorkannya ke salah satu pool NAVI -> aset itu menjadi bagian dari likuiditas protokol.
+2. Sebagai penyetor (liquidity provider), pengguna akan mendapatkan hasil (interest/yield) dari penggunaan aset oleh peminjam.
+3. Peminjam bisa memasukkan kolateral (collateral) dan meminjam aset sesuai dengan rasio kolateral yang ditetapkan. Jika kolateral turun -> terkena likuidasi.
+4. Protokol menggunakan oracle harga dan mekanisme risiko untuk menjaga solvabilitas, dan menggunakan parameter-tingkat (supply limit, debt ceiling) untuk aset beresiko.
+5. Karena berjalan di Sui, transaksi cepat dan biaya rendah, serta kompatibel dengan ekosistem Sui (token, bridging, staking, dsb).
+
+Keunggulan Navi di Sui:
+1. Biaya transaksi rendah & kecepatan tinggi, Dibandingkan protokol Defi Sui menawarkan pengalaman lebih efisien.
+2. Fokus likuiditas & efisiensi modal, karena pool-pool terpisah memungkinkan pengguna dan aset yang bervariasi.
+3. Integrasi ekosistem Sui yang berkembang, berfungsi sebagai infrastruktur DeFi penting di Sui sehingga user dapat akses ke protokol lending & borrowing.
+4. Developer-friendly, SDK dan dokumentasi developer tersedia supaya pengembang bisa build aplikasi.
+

@@ -1,0 +1,37 @@
+2. Jelaskan apa saja yang bisa dilakukan Navi Protokol 
+
+    1. LENDING
+        Dalam Navi Protokol user dapat menyimpan aset kripto mereka untuk dipinjamkan ke protokol.
+        Dari aset yang disimpan, pengguna akan mendapatkan bunga (deposit rate).
+        Aset yang disimpan juga dapat digunakan oleh pengguna lain sebagai likuiditas pinjaman.
+        Contohnya : Menggunakan modul @naviprotocol/lending untuk memanggil fungsi seperti getAllPools() guna melihat seluruh pool pinjaman.
+
+    2. BORROWING
+        Pengguna dapat mengambil pinjaman aset lain dengan menggunakan aset yang telah didepositkan sebagai jaminan (collateral).
+        Sistem otomatis akan menghitung borrow rate (tingkat bunga pinjaman).
+        Jumlah yang bisa dipinjam tergantung pada Loan-to-Value (LTV) dari aset jaminan.
+        Contohnya : Jika pengguna menjaminkan SUI senilai $100 dan LTV 80%, maka mereka bisa meminjam aset lain hingga senilai $80.
+
+    3. FLASH LOANS
+        Navi Flash Loans memungkinkan pengguna untuk meminjam asset tanpa memberikan jaminan (collateral).
+        Pengguna bisa meminjam aset dari pool, selama aset itu dikembalikan dalam transaksi yang sama.
+        Jika tidak dikembalikan dalam satu transaksi block -> transaksi otomatis dibatalkan (reverted).
+
+    4. AUTOMATIC LEVERAGE VAULTS
+        Fitur otomatisasi untuk memperbesar posisi investasi (leverage) tanpa pengguna harus meminjam secara manual.
+        Fitur ini memungkinkan pengguna menggunakan aset yang didepositkan sebagai jaminan untuk secara otomatis meminjam lebih banyak aset yang sama atau berbeda, sehingga meningkatkan eksposur (leverage) mereka.
+        Pada fitur ini, Vault akan meminjam dan menyetor ulang aset secara berulang (looping) untuk meningkatkan imbal hasil (yield).
+        Contohnya : Misalkan setor 10 SUI, sistem bisa otomatis meminjam lagi dengan jaminan tersebut dan mengulang proses hingga leverage yang diinginkan tercapai (misalnya 3x)
+    
+    5. LST (LIQUID STAKING TOKEN STRATEGIES)
+        Navi mengintegrasikan LST untuk memaksimalkan efisiensi modal sambil mempertahankan imbalan staking.
+        LST (Liquid Staking Token) adalah token hasil staking yang masih bisa digunakan dalam ekosistem DeFi.
+        Navi Protocol memungkinkan pengguna menggunakan LST sebagai jaminan (collateral) untuk di protokol pinjaman/peminjaman.
+        Artinya : Bisa staking dan tetap menggunakan token hasil staking itu untuk meminjam aset lain, menambah likuiditas, atau berpartisipasi di Vault.
+
+    6.ISOLATION MODE
+        Mode isolasi memungkinkan aset baru atau berisiko ditambahkan dengan aman tanpa memengaruhi pasar lainnya.
+        Dalam mode ini, aset yang digunakan sebagai jaminan (kolateral) terisolasi dari aset-aset utama lainnya.
+        Jika terjadi masalah likuidasi atau volatilitas tinggi pada aset tersebut, tidak akan memengaruhi seluruh protokol.
+        Tujuannya : Menjaga stabilitas sistem utama dengan Membatasi risiko kegagalan atau likuidasi aset berisiko tinggi agar tidak menyebar ke seluruh protokol., 
+        

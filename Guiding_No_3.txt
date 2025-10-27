@@ -1,0 +1,27 @@
+3.  Buat mini projek untuk menampilkan data poolId, depositRate, borrowRate, totalDeposit dan totalBorrow pada fungsi getAllPools() dan jelaskan apa itu pools 
+
+Pools adalah wadah atau kumpulan likuiditas yang berisi aset digital dari para pengguna, yang digunakan untuk kegiatan Lending dan Borrowing di Navi Protokol.
+Pada Navi Protokol, Modul operasi pool menyediakan fungsionalitas peminjaman yang komprehensif termasuk :
+    a. Deposits
+    b. Borrowing
+    c. Repayments
+    d. Withdrawals
+    e. Kueri informasi pool dan fungsi statistik.
+
+Contoh Pool di Navi : SUI Pool, USDC Pool, wETH Pool, NAVX Pool
+Setiap pool berfungsi untuk menghubungkan pemberi pinjaman (lender/depositor) dan peminjam (borrower) secara terdesentralisasi.
+
+Cara Kerja Pool Pada Navi Protokol
+    a. Deposit (Supply)
+        Pengguna dapat menyetor uang ke pool tertentu
+        Sebagai imbalan, pengguna akan mendapatkan bunga dari peminjam dan token yang mewakili simpanan di pool tersebut.
+
+    b. Borrow (Pinjam)
+        Pengguna lain dapat meminjam asset dari pool dengan menyediakan jaminan (collateral) terlebih dulu.
+    
+    c. Interest Rate (Suku Bunga)
+        Setiap pool memiliki 2 jenis suku bunga: 1. Deposit Rate (Untuk pemberi pinjaman/supplier) dan Borrow Rate (Untuk peminjam/borrower)
+        Suku bunga ini berubah secara dinamis tergantung pada permintaan dan penawaran di masing-masing pool.
+    
+    d. Reward
+        Navi juga memberikan insentif tambahan dalam bentuk token NAVX untuk aktivitas lending dan borrowing pada pool tertentu.
